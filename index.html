@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,39 @@
     <script src="script.js"></script>
     <title>Document</title>
 </head>
+
 <body>
+
+    <div class="gameStatsTracker">
+        <p>Games Player Won: <span id="playerGameWins">0</span></p>
+        <p>Games Computer Won: <span id="computerGameWins">0</span></p>
+    </div>
+
+    <div class="scores">
+        <p id="playerScore">Player: 0</p>
+        <p id="computerScore">Computer: 0</p>
+    </div>
     
+    <div id="resultDisplay"></div>
+
+    <div>
+        <div id="winnerDisplay"></div>
+    </div>
+    
+    <div class="rps">
+        <div class="rock glow-outline">
+            <button><img src="rockImage.png" alt="imageForRock" width="150" height="150"></button>
+        </div>
+        <div class="paper glow-outline">
+            <button><img src="paperImage.png" alt="imageForPaper" width="150" height="150"></button>
+        </div>
+        <div class="scissors glow-outline">
+            <button><img src="scissorsImage.png" alt="imageForScissors" width="150" height="150"></button>
+        </div>
+    </div>
+    
+
+
 </body>
+
 </html>
