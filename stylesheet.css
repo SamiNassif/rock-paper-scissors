@@ -1,0 +1,100 @@
+*{
+    margin: auto;
+}
+
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0; /* Remove default margin to ensure the image covers the entire body */
+}
+
+.scores, #resultDisplay, #winnerDisplay{
+    /* Add styles for other content to avoid overlapping with the background */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Set a semi-transparent white background for better readability */
+    border-radius: 10px;
+    margin: 20px; /* Add some margin to separate content from the edges */
+}
+
+.scores{
+    display: flex;
+    flex-direction: row;
+    background-color: #1882d8; /* Blue background color */
+    color: white; /* White text color */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    font-size: 24px; /* Increase font size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+#resultDisplay{
+    text-align: center;
+    background-color: #3b3b3b; /* Green background color */
+    color: white; /* White text color */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    font-size: 24px; /* Increase font size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+#winnerDisplay{
+    text-align: center;
+    background-color: #dd6f08; /* Red background color */
+    color: white; /* White text color */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    font-size: 24px; /* Increase font size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.gameStatsTracker{
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to right, #1882d8, #3b3b3b, #dd6f08);
+    color: white; /* White text color */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    font-size: 28px; /* Increase font size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.rps{
+    display: flex;
+    flex-direction: row;
+    padding-top: 200px;
+}
+
+button{
+    background: none;
+    border: none;
+}
+
+.rock:hover{
+    transition: background-color 0.3s ease; 
+    box-shadow: 0 0 10px 5px #1882d8; /* Adjust the values as needed */
+}
+
+.paper:hover{
+    box-shadow: 0 0 10px 5px #4CAF50;
+}
+
+.scissors:hover{ 
+    box-shadow: 0 0 10px 5px #ff2701;
+}
+
+.glow-outline{
+    box-shadow: 0 0 0 0 transparent;
+    transition: box-shadow 0.3s ease; /* Add transition for smooth effect */
+}
+
+
+img{
+    width: 150px;
+    height: 150px;
+}
